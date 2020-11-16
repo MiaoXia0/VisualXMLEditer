@@ -48,7 +48,7 @@ namespace SuperUltraExcellentXMLDataTool
             {
                 drs = ds.Tables[0].Select(comboBox1.Text + "=" + textBox1.Text);
             }
-            catch (EvaluateException)
+            catch (Exception)
             {
                 drs = ds.Tables[0].Select(comboBox1.Text + "='" + textBox1.Text + "'");
             }
